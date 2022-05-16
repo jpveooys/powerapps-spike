@@ -39,11 +39,7 @@ export class GOVUKButtonControl
   ): React.ReactElement {
     const props: GOVUKButtonProps = {
       children: context.parameters.text.raw || "",
-      type: context.parameters.warning.raw
-        ? "warning"
-        : context.parameters.secondary.raw
-        ? "secondary"
-        : "primary",
+      type: context.parameters.variant.raw,
       onClick: () => {
         this.clickIndex += 1;
         this.notifyOutputChanged();

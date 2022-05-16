@@ -4,7 +4,7 @@ import classNames from "classnames";
 export interface GOVUKButtonProps {
   children: string;
   onClick: () => void;
-  type?: "primary" | "secondary" | "warning";
+  type?: "default" | "secondary" | "warning";
 }
 
 export class GOVUKButton extends React.Component<GOVUKButtonProps> {
