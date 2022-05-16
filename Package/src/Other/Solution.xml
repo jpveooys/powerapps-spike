@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ImportExportXml version="9.1.0.643" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
-    <!-- Unique Name of Cds Solution-->
-    <UniqueName>GOVUKButton</UniqueName>
+    <!-- Unique Name of Cds Package-->
+    <UniqueName>GOVUKPackage</UniqueName>
     <LocalizedNames>
-      <!-- Localized Solution Name in language code -->
-      <LocalizedName description="GOVUKButton" languagecode="1033" />
+      <!-- Localized Package Name in language code -->
+      <LocalizedName description="GOVUKPackage" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
     <Version>1.0.3</Version>
-    <!-- Solution Package Type: Unmanaged(0)/Managed(1)/Both(2)-->
+    <!-- Package Package Type: Unmanaged(0)/Managed(1)/Both(2)-->
     <Managed>2</Managed>
     <Publisher>
-      <!-- Unique Publisher Name of Cds Solution -->
+      <!-- Unique Publisher Name of Cds Package -->
       <UniqueName>RSTest</UniqueName>
       <LocalizedNames>
         <!-- Localized Cds Publisher Name in language code-->

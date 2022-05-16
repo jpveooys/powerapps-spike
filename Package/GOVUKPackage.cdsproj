@@ -44,7 +44,8 @@
   </ItemGroup>
   
   <ItemGroup>
-    <ProjectReference Include="../GOVUKTextInput.pcfproj" />
+    <ProjectReference Include="../GOVUKButton/GOVUKButton.pcfproj" />
+    <ProjectReference Include="../GOVUKTextInput/GOVUKTextInput.pcfproj" />
   </ItemGroup>
 
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />

@@ -1,11 +1,10 @@
 {
   "name": "pcf-project",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Project containing your PowerApps Component Framework (PCF) control.",
   "scripts": {
+    "prebuild": "mkdir -p build && sass -I node_modules GOVUKTextInput/css/index.scss build/index.css",
     "build": "pcf-scripts build",
-    "build:css": "mkdir -p build && sass -I node_modules GOVUKTextInput/css/index.scss build/index.css",
-    "package": "npm run build:css && cd Solution && dotnet build && dotnet msbuild '/p:Configuration=Release'",
     "clean": "pcf-scripts clean",
     "rebuild": "pcf-scripts rebuild",
     "start": "pcf-scripts start",
