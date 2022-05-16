@@ -44,6 +44,7 @@
   </ItemGroup>
   
   <ItemGroup>
+    <ProjectReference Include="../GOVUKAccordion/GOVUKAccordion.pcfproj" />
     <ProjectReference Include="../GOVUKButton/GOVUKButton.pcfproj" />
     <ProjectReference Include="../GOVUKTextInput/GOVUKTextInput.pcfproj" />
   </ItemGroup>
