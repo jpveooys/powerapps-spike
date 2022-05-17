@@ -47,10 +47,11 @@ export class GOVUKAccordionControl
           body,
         };
       });
+
     const props: GOVUKAccordionProps = {
       entries,
     };
-    console.log(entries);
+
     return React.createElement(GOVUKAccordion, props);
   }
 

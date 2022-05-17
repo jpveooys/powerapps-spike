@@ -48,7 +48,7 @@ export class GOVUKAccordion extends React.Component<GOVUKAccordionProps> {
               <div
                 id={`accordion-default-content-${index}`}
                 className="govuk-accordion__section-content"
-                aria-labelledby="{`accordion-default-heading-${index}`}"
+                aria-labelledby={`accordion-default-heading-${index}`}
               >
                 <p className="govuk-body">{entry.body}</p>
               </div>

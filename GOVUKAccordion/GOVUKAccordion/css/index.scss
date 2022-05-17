@@ -1,14 +1,10 @@
-@use "govuk-frontend/govuk/helpers/visually-hidden" as vh;
-@use "govuk-frontend/govuk/components/accordion/accordion";
+@import "govuk-frontend/govuk/base";
+@import "govuk-frontend/govuk/core/all";
+@import "govuk-frontend/govuk/objects/all";
+@import "govuk-frontend/govuk/components/accordion";
+@import "govuk-frontend/govuk/utilities/all";
+@import "govuk-frontend/govuk/overrides/all";
 
 .govuk-accordion {
   text-align: left;
-}
-
-.govuk-visually-hidden {
-  @include vh.govuk-visually-hidden;
-}
-
-.govuk-visually-hidden-focusable {
-  @include vh.govuk-visually-hidden-focusable;
 }
