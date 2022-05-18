@@ -1,7 +1,7 @@
+import * as objectHash from "object-hash";
 import * as React from "react";
 // @ts-ignore
 import * as Accordion from "govuk-frontend/govuk/components/accordion/accordion";
-import classNames from "classnames";
 
 export interface Entry {
   title: string;
@@ -13,29 +13,35 @@ export interface GOVUKAccordionProps {
 }
 
 export class GOVUKAccordion extends React.Component<GOVUKAccordionProps> {
-  private readonly ref: React.RefObject<HTMLDivElement>;
+  private accordion: any;
 
   constructor(props: GOVUKAccordionProps) {
     super(props);
-    this.ref = React.createRef<HTMLDivElement>();
-  }
-
-  componentDidMount() {
-    new Accordion(this.ref.current).init();
   }
 
   public render(): React.ReactNode {
     return (
-      <div className="govuk-powerapps-accordion">
+      <div
+        className="govuk-powerapps-accordion"
+        key={objectHash(this.props.entries)}
+      >
         <div className="js-enabled">
           <div
-            ref={this.ref}
+            ref={(element) => {
+              if (
+                element &&
+                (!this.accordion || element !== this.accordion.$module)
+              ) {
+                this.accordion = new Accordion(element);
+                this.accordion.init();
+              }
+            }}
             className="govuk-accordion"
             data-module="govuk-accordion"
             id="accordion-default"
           >
             {this.props.entries.map((entry, index) => (
-              <div className="govuk-accordion__section" key={entry.title}>
+              <div className="govuk-accordion__section" key={index}>
                 <div className="govuk-accordion__section-header">
                   <h2 className="govuk-accordion__section-heading">
                     <span
