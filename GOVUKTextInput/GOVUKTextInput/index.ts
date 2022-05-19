@@ -41,7 +41,7 @@ export class GOVUKTextInputControl
     const props: GOVUKTextInputProps = {
       label: context.parameters.label.raw || "",
       value: context.parameters.value.raw || "",
-      name: context.parameters.name.raw || "",
+      name: context.mode.label,
       isLarge: context.parameters.large.raw,
       onChange: (value) => {
         this.value = value;
